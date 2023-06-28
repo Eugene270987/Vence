@@ -1,0 +1,202 @@
+.hero{
+  position: relative;
+  padding-top: 200px;
+  background-color: var(--mainWhiteColour);
+  font-size: 12px;
+  color: var(--accentArticleColour);
+  &__article{
+    &-bg{
+      background: url("../../../img/clothes.png"), var(--mainBlackColour) center / cover no-repeat;
+      width: 100%;
+      padding-top: 250px;
+      padding-bottom: 250px;
+    }
+    &-content{
+      border-bottom: 1px solid var(--spanColour);
+      margin-left: 212px;
+      margin-bottom: 16px;
+      span,
+      &-desc{
+        display: block;
+        padding-bottom: 15px;
+      }
+      &-title{
+        font-size: 25px;
+        color: var(--mainBlackColour);
+        font-weight: 700;
+        max-width: 500px;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      &-desc{
+        max-width: 393px;
+        width: 100%;
+      }
+    }
+    &-info{
+      display: flex;
+      gap: 50px;
+      align-items: center;
+      padding-bottom: var(--sectionPadding);
+      margin-left: 212px;
+    }
+    &-desc{
+      color: var(--paragraphColour);
+      &:first-child{
+        padding-top: var(--sectionPadding);
+        margin-bottom: 30px;
+      }
+      &:last-child{
+        padding-bottom: var(--sectionPadding);
+      }
+    }
+    &-title{
+      max-width: 605px;
+      width: 100%;
+      padding-top: var(--sectionPadding);
+      padding-bottom: var(--sectionPadding);
+      font-size: 25px;
+      color: var(--mainBlackColour);
+      font-weight: 700;
+    }
+    &-data{
+      display: grid;
+      grid-template-columns: repeat(4, 181px);
+      grid-template-rows: auto auto;
+      gap: 10px 30px;
+      align-items: center;
+      padding-bottom: 20px;
+      &-title{
+        font-weight: 500;
+        color: var(--mainBlackColour);
+      }
+      &-info{
+        color: var(--paragraphColour);
+      }
+    }
+    &-pages{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 38px;
+      padding-top: 37px;
+      background: var(--bgGreyColor);
+      a{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--mainBlackColour);
+        font-weight: 500;
+        &:hover{
+          color: var(--accentColour);
+          opacity: .7;
+          svg{
+            path{
+              fill: var(--accentColour);
+              opacity: .7;
+            }
+          }
+        }
+        &:active{
+          opacity: 1;
+          svg{
+            path{
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    &-slider{
+      .owl-dots{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 20px;
+        .owl-dot{
+          span{
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            border: 1px solid var(--borderColour);
+            background-color: transparent;
+          }
+        }
+        .owl-dot.active{
+          span{
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: var(--mainBlackColour);
+          }
+        }
+      }
+      .owl-stage{
+        display: flex;
+        align-items: center;
+      }
+      .owl-item{
+        text-align: center;
+      }
+      a{
+        max-width: 605px;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.pages__nav{
+  margin-top: 40px;
+  padding-bottom: var(--sectionPadding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-list{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+    &-link{
+      border: 1px solid var(--borderColour);
+      border-radius: var(--btnBorderRadius);
+      align-self: center;
+      font-weight: 700;
+      font-size: 8px;
+      line-height: 2.5;
+      padding: 2px 13px;
+      color: var(--paragraphColour);
+      text-transform: uppercase;
+      &:hover,
+      &:focus{
+        background-color: var(--btnBgColour);
+      }
+      &:active{
+        background-color: var(--accentColour);
+      }
+    }
+  }
+  &-share{
+    a{
+      display: flex;
+      padding: 2px 5px;
+      border: 1px solid transparent;
+      gap: 5px;
+      align-items: center;
+      text-transform: uppercase;
+      font-size: 8px;
+      border-radius: var(--btnBorderRadius);
+      line-height: 2.5;
+      font-weight: 700;
+      color: var(--paragraphColour);
+      &:hover{
+        border: 1px solid var(--borderColour);
+      }
+      &:active{
+        background-color: var(--accentColour);
+      }
+    }
+  }
+}

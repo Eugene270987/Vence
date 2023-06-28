@@ -40,9 +40,34 @@ body{
         padding-left: calc(50vw - 180px);
         padding-right: calc(50vw - 180px);
       }
+      @media screen and (max-width: 450px) {
+        padding-left: calc(50vw - 150px);
+        padding-right: calc(50vw - 150px);
+      }
+      @media screen and (max-width: 370px) {
+        padding-left: calc(50vw - 135px);
+        padding-right: calc(50vw - 135px);
+      }
 }
 
 .container-md{
   padding-left: calc(50vw - 408px);
   padding-right: calc(50vw - 408px);
+
+  @media screen and (max-width: 1160px) {
+    padding-left: calc(50vw - 430px);
+    padding-right: calc(50vw - 430px);
+  }
+  @media screen and (max-width: 960px) {
+    padding-left: calc(50vw - 330px);
+    padding-right: calc(50vw - 330px);
+  }
+  @media screen and (max-width: 768px) {
+    padding-left: calc(50vw - 234px);
+    padding-right: calc(50vw - 234px);
+  }
+  @media screen and (max-width: 640px) {
+    padding-left: calc(50vw - 170px);
+    padding-right: calc(50vw - 170px);
+  }
 }
