@@ -366,102 +366,6 @@ body {
   --sectionPadding: 100px;
 }
 
-body {
-  line-height: 1.7;
-  font-size: 14px;
-  font-family: "Poppins", "Arial", sans-serif;
-  font-weight: 300;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.main {
-  flex: 1 1 auto;
-}
-
-.container-lg {
-  padding-left: calc(50vw - 620px);
-  padding-right: calc(50vw - 620px);
-}
-@media screen and (max-width: 1240px) {
-  .container-lg {
-    padding-left: calc(50vw - 550px);
-    padding-right: calc(50vw - 550px);
-  }
-}
-@media screen and (max-width: 1160px) {
-  .container-lg {
-    padding-left: calc(50vw - 480px);
-    padding-right: calc(50vw - 480px);
-  }
-}
-@media screen and (max-width: 960px) {
-  .container-lg {
-    padding-left: calc(50vw - 380px);
-    padding-right: calc(50vw - 380px);
-  }
-}
-@media screen and (max-width: 768px) {
-  .container-lg {
-    padding-left: calc(50vw - 314px);
-    padding-right: calc(50vw - 314px);
-  }
-}
-@media screen and (max-width: 640px) {
-  .container-lg {
-    padding-left: calc(50vw - 250px);
-    padding-right: calc(50vw - 250px);
-  }
-}
-@media screen and (max-width: 520px) {
-  .container-lg {
-    padding-left: calc(50vw - 180px);
-    padding-right: calc(50vw - 180px);
-  }
-}
-@media screen and (max-width: 450px) {
-  .container-lg {
-    padding-left: calc(50vw - 150px);
-    padding-right: calc(50vw - 150px);
-  }
-}
-@media screen and (max-width: 370px) {
-  .container-lg {
-    padding-left: calc(50vw - 135px);
-    padding-right: calc(50vw - 135px);
-  }
-}
-
-.container-md {
-  padding-left: calc(50vw - 408px);
-  padding-right: calc(50vw - 408px);
-}
-@media screen and (max-width: 1160px) {
-  .container-md {
-    padding-left: calc(50vw - 430px);
-    padding-right: calc(50vw - 430px);
-  }
-}
-@media screen and (max-width: 960px) {
-  .container-md {
-    padding-left: calc(50vw - 330px);
-    padding-right: calc(50vw - 330px);
-  }
-}
-@media screen and (max-width: 768px) {
-  .container-md {
-    padding-left: calc(50vw - 234px);
-    padding-right: calc(50vw - 234px);
-  }
-}
-@media screen and (max-width: 640px) {
-  .container-md {
-    padding-left: calc(50vw - 170px);
-    padding-right: calc(50vw - 170px);
-  }
-}
-
 .header {
   padding-top: 36px;
   padding-bottom: 36px;
@@ -539,7 +443,7 @@ body {
   color: var(--accentArticleColour);
 }
 .hero__article-bg {
-  background: url("../img/clothes.png") center/cover no-repeat;
+  background-image: url("../img/clothes.png") center/cover no-repeat;
   width: 100%;
   padding-top: 250px;
   padding-bottom: 250px;
