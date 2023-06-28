@@ -576,6 +576,7 @@ body {
   padding: 2px 13px;
   color: var(--paragraphColour);
   text-transform: uppercase;
+  border-radius: var(--btnBorderRadius);
 }
 .pages__nav-list-link:hover, .pages__nav-list-link:focus {
   background-color: var(--btnBgColour);
@@ -594,6 +595,7 @@ body {
   line-height: 2.5;
   font-weight: 700;
   color: var(--paragraphColour);
+  border-radius: var(--btnBorderRadius);
 }
 .pages__nav-share a:hover {
   border: 1px solid var(--borderColour);

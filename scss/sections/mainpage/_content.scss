@@ -80,6 +80,7 @@
       padding: 2px 13px;
       color: var(--paragraphColour);
       text-transform: uppercase;
+      border-radius: var(--btnBorderRadius);
       &:hover,
       &:focus{
         background-color: var(--btnBgColour);
@@ -101,6 +102,7 @@
       line-height: 2.5;
       font-weight: 700;
       color: var(--paragraphColour);
+      border-radius: var(--btnBorderRadius);
       &:hover{
         border: 1px solid var(--borderColour);
       }
