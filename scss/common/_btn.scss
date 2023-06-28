@@ -1,0 +1,23 @@
+.btn__more{
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  padding: 8px 50px;
+  background-color: var(--mainBlackColour);
+  color: var(--mainWhiteColour);
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: var(--btnBorderRadius);
+  width: 180px;
+  grid-column: span 3;
+  margin-top: 20px;
+
+  &:hover{
+    background-color: var(--accentColour);
+    opacity: .5;
+    color: var(--mainBlackColour);
+  }
+  &:active{
+    opacity: 1;
+  }
+}

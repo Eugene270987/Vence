@@ -1,0 +1,46 @@
+.promo{
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 330px;
+  padding-bottom: 40px;
+  flex-direction: column;
+  position: relative;
+  gap: 15px;
+  background: url("../img/tech-promo.png") center / cover no-repeat;
+  &__info,
+  &__desc{
+    font-size: 12px;
+    color: var(--spanColour);
+    max-width: 360px;
+    width: 100%;
+  }
+  &__title{
+    font-size: 25px;
+    color: var(--mainWhiteColour);
+    font-weight: 700;
+    max-width: 605px;
+    width: 100%;
+  }
+  &__desc{
+    margin-bottom: 40px;
+  }
+  &__pagination{
+    color: var(--spanColour);
+    letter-spacing: 2.4px;
+    font-size: 12px;
+    align-self: flex-end;
+    display: block;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -54px;
+      width: 44px;
+      border-bottom: 0.5px solid var(--mainWhiteColour);
+
+    }
+  }
+}

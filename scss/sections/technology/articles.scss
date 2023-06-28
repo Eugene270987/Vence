@@ -1,0 +1,118 @@
+.articles {
+  padding-top: var(--sectionPadding);
+  padding-bottom: var(--sectionPadding);
+
+  &__categories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 44px;
+
+    &-link {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 12px;
+      line-height: 2.1;
+      font-weight: 500;
+      color: var(--accentArticleColour);
+    }
+  }
+
+  &__view {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &-type {
+      color: var(--accentArticleColour);
+      opacity: .5;
+      font-size: 12px;
+      line-height: 2.1;
+      font-weight: 500;
+    }
+
+    .active-type {
+      opacity: 1;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: 1fr 1fr;
+    gap: 45px 30px;
+
+    &-article {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      position: relative;
+
+      img {
+        border-radius: var(--btnBorderRadius);
+      }
+
+      &-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        text-transform: uppercase;
+        color: var(--mainWhiteColour);
+        font-size: 8px;
+        font-weight: 700;
+        padding: 2px 11px;
+        width: 64px;
+        height: 25px;
+        background: var(--btnBgColour);
+        border-radius: var(--btnBorderRadius);
+        z-index: 2;
+        &:hover{
+          background: var(--accentColour);
+        }
+      }
+
+      &-date,
+      &-desc,
+      &-author {
+        font-size: 12px;
+        color: var(--accentArticleColour);
+      }
+
+      &-date {
+        display: block;
+        margin-top: 15px;
+      }
+
+      &-title {
+        a {
+          display: block;
+          font-size: 25px;
+          color: var(--mainBlackColour);
+
+          &:hover{
+            color: var(--articleColour);
+          }
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+          }
+        }
+      }
+
+      &-desc {
+        padding-bottom: 15px;
+        border-bottom: 1px solid var(--spanColour);
+      }
+    }
+  }
+}
