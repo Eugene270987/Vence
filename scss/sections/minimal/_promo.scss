@@ -1,0 +1,45 @@
+.promo{
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/moon.png") center / cover no-repeat;
+    padding-top: 192px;
+    padding-bottom: 212px;
+    border-radius: var(--pictureBorderRadius);
+    position: relative;
+    &-author{
+      font-size: 12px;
+      color: var(--spanColour);
+    }
+    &-title{
+      max-width: 500px;
+      width: 100%;
+      &-link{
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        color: var(--mainWhiteColour);
+        font-size: 25px;
+        font-weight: 700;
+        &:hover{
+          color: var(--mainBlackColour);
+        }
+        &:active{
+          color: var(--accentColour);
+        }
+        &:before{
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+}

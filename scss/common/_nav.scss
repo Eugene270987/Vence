@@ -93,4 +93,13 @@
             display: none;
         }
     }
+    &-minimal-link{
+        color: var(--articleColour);
+        &:hover{
+            color: var(--mainBlackColour);
+        }
+        &:active{
+            color: var(--accentColour);
+        }
+    }
 }

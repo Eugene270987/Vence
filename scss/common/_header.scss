@@ -9,4 +9,25 @@
     top: 0;
     left: 0;
     z-index: 5;
+    &__login{
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        justify-content: space-between;
+        &-register{
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--articleColour);
+            line-height: 2.1;
+            &:hover{
+                color: var(--mainBlackColour);
+            }
+            &:active{
+                color: var(--accentColour);
+            }
+        }
+    }
+    &__minimal{
+        position: static;
+    }
 }

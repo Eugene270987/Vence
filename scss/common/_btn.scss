@@ -21,3 +21,20 @@
     opacity: 1;
   }
 }
+
+.btn__started{
+  display: flex;
+  padding: 8px 15px;
+  background-color: var(--accentColour);
+  border-radius: var(--bigBorderRadius);
+  color: var(--mainWhiteColour);
+  font-size: 12px;
+  line-height: 2.1;
+  font-weight: 500;
+  &:hover{
+    background-color: var(--articleColour);
+  }
+  &:active{
+    color: var(--accentColour);
+  }
+}
