@@ -96,6 +96,9 @@
           &:hover{
             color: var(--articleColour);
           }
+          &:active{
+            color: var(--accentColour);
+          }
 
           &:before {
             content: '';

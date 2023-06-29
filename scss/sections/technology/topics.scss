@@ -1,0 +1,113 @@
+.topics{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  &__set{
+    background: var(--mainBlackColour);
+    padding-right: 0;
+    padding-top: var(--sectionPadding);
+    padding-bottom: var(--sectionPadding);
+    &-title{
+      margin-bottom: 60px;
+      &-link{
+        font-size: 25px;
+        line-height: 20px;
+        color: var(--mainWhiteColour);
+        &:hover{
+          color: var(--accentArticleColour);
+        }
+        &:active{
+          color: var(--accentColour);
+        }
+      }
+    }
+    &-article{
+      display: grid;
+      grid-template-columns: 181px 1fr;
+      grid-template-rows: repeat(4, auto);
+      gap: 15px 30px;
+      margin-bottom: 40px;
+      position: relative;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      &-image{
+        grid-row: span 4;
+        border-radius: var(--btnBorderRadius);
+      }
+      &-date,
+      &-desc{
+        color: var(--spanColour);
+        font-size: 12px;
+      }
+      &-title,
+      &-desc{
+        max-width: 287px;
+        width: 100%;
+      }
+      &-link{
+        display: block;
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--mainWhiteColour);
+        &:hover{
+          color: var(--articleColour);
+        }
+        &:active{
+          color: var(--accentColour);
+        }
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+  &__destination{
+    background: url("../img/mountains.png") center / cover no-repeat;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    &-title,
+    &-desc{
+      text-align: center;
+      max-width: 393px;
+      width: 100%;
+    }
+    &-title{
+      padding-top: 50px;
+    }
+    &-desc{
+      color: var(--spanColour);
+      font-size: 12px;
+    }
+    &-link{
+      display: block;
+      color: var(--mainWhiteColour);
+      font-size: 25px;
+      font-weight: 700;
+      &:hover{
+        text-decoration: underline;
+      }
+      &:active{
+        color: var(--accentColour);
+        text-decoration: none;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}

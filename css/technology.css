@@ -617,6 +617,9 @@ body {
 .articles__grid-article-title a:hover {
   color: var(--articleColour);
 }
+.articles__grid-article-title a:active {
+  color: var(--accentColour);
+}
 .articles__grid-article-title a:before {
   content: "";
   position: absolute;
@@ -629,6 +632,199 @@ body {
 .articles__grid-article-desc {
   padding-bottom: 15px;
   border-bottom: 1px solid var(--spanColour);
+}
+
+.topics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.topics__set {
+  background: var(--mainBlackColour);
+  padding-right: 0;
+  padding-top: var(--sectionPadding);
+  padding-bottom: var(--sectionPadding);
+}
+.topics__set-title {
+  margin-bottom: 60px;
+}
+.topics__set-title-link {
+  font-size: 25px;
+  line-height: 20px;
+  color: var(--mainWhiteColour);
+}
+.topics__set-title-link:hover {
+  color: var(--accentArticleColour);
+}
+.topics__set-title-link:active {
+  color: var(--accentColour);
+}
+.topics__set-article {
+  display: grid;
+  grid-template-columns: 181px 1fr;
+  grid-template-rows: repeat(4, auto);
+  gap: 15px 30px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.topics__set-article:last-child {
+  margin-bottom: 0;
+}
+.topics__set-article-image {
+  grid-row: span 4;
+  border-radius: var(--btnBorderRadius);
+}
+.topics__set-article-date, .topics__set-article-desc {
+  color: var(--spanColour);
+  font-size: 12px;
+}
+.topics__set-article-title, .topics__set-article-desc {
+  max-width: 287px;
+  width: 100%;
+}
+.topics__set-article-link {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--mainWhiteColour);
+}
+.topics__set-article-link:hover {
+  color: var(--articleColour);
+}
+.topics__set-article-link:active {
+  color: var(--accentColour);
+}
+.topics__set-article-link:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.topics__destination {
+  background: url("../img/mountains.png") center/cover no-repeat;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+.topics__destination-title, .topics__destination-desc {
+  text-align: center;
+  max-width: 393px;
+  width: 100%;
+}
+.topics__destination-title {
+  padding-top: 50px;
+}
+.topics__destination-desc {
+  color: var(--spanColour);
+  font-size: 12px;
+}
+.topics__destination-link {
+  display: block;
+  color: var(--mainWhiteColour);
+  font-size: 25px;
+  font-weight: 700;
+}
+.topics__destination-link:hover {
+  text-decoration: underline;
+}
+.topics__destination-link:active {
+  color: var(--accentColour);
+  text-decoration: none;
+}
+.topics__destination-link:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.world {
+  padding-top: var(--sectionPadding);
+  padding-bottom: var(--sectionPadding);
+}
+.world__title {
+  margin-bottom: 60px;
+}
+.world__title-link {
+  color: var(--accentArticleColour);
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.world__title-link:hover {
+  color: var(--articleColour);
+}
+.world__title-link:active {
+  color: var(--accentColour);
+}
+.world__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.world__wrapper-article {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+.world__wrapper-article-image {
+  max-width: 287px;
+  height: 200px;
+  border-radius: var(--btnBorderRadius);
+  margin-bottom: 15px;
+}
+.world__wrapper-article-link {
+  color: var(--mainBlackColour);
+  font-size: 16px;
+  font-weight: 500;
+}
+.world__wrapper-article-link:hover {
+  color: var(--articleColour);
+}
+.world__wrapper-article-link:active {
+  color: var(--accentColour);
+}
+.world__wrapper-article-link:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.world__wrapper-article-date, .world__wrapper-article-desc {
+  font-size: 12px;
+  color: var(--accentArticleColour);
+}
+.world__wrapper-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  color: var(--mainWhiteColour);
+  font-size: 8px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 2px 11px;
+  width: 64px;
+  height: 25px;
+  background: var(--btnBgColour);
+  border-radius: var(--btnBorderRadius);
+  z-index: 2;
+}
+.world__wrapper-link:hover {
+  background: var(--accentColour);
 }
 
 .footer {
