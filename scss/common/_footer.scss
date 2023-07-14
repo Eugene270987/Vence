@@ -25,6 +25,7 @@
           &:hover{
             color: var(--mainWhiteColour);
             border: 1px solid var(--borderColour);
+            border-radius: var(--btnBorderRadius);
           }
           &:active{
             position: relative;
